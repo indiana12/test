@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="./css/style.css">
+<script type="text/javascript" src="./js/main.js"></script>
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.9/css/mdb.min.css" rel="stylesheet">
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.9/js/mdb.min.js"></script>
+</head>
+<body>
+<!--Jumbotron-->
+<div class="jumbotron text-center">
+<form action="emp_servlet" method="post">
+  <div class="form-row">
+    <div class="col-md-4 mb-3">
+      <label for="validationDefault01">First name</label>
+      <input type="text" class="form-control" name="Fname" id="validationDefault01" placeholder="First name" value="" required>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="validationDefault02">Last name</label>
+      <input type="text" class="form-control" id="validationDefault02" name="Lname" placeholder="Last name" value="" required>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="validationDefaultUsername">Email</label>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroupPrepend2">@</span>
+        </div>
+        <input type="text" class="form-control" name="Email" id="validationDefaultUsername" placeholder="Username" aria-describedby="inputGroupPrepend2" required="required">
+      </div>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationDefault03">Password</label>
+      <input type="password" class="form-control" name="password" id="validationDefault03" placeholder="Password" required="required">
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="validationDefault04">Phone</label>
+      <input type="number" class="form-control" name="number" id="validationDefault04" placeholder="Number" required>
+    </div>
+  </div>
+  <button class="btn btn-info" type="submit"  onclick="ValidateUser()">Submit form</button>
+</form>
+</div>
+<!--Jumbotron-->
+
+</body>
+</html>
